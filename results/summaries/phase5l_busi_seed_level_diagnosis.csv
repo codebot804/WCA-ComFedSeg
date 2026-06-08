@@ -1,0 +1,7 @@
+seed,method,average_dice,worst_client_dice,worst_client_id,best_client_dice,client_dice_std,best_worst_gap,average_loss,interpretation
+42,fedprox,0.5812557492,0.4818838566,0,0.692480278,0.0863831655,0.2105964214,1.0361342578,reference run
+42,wca_comfedseg_prox,0.5491783234,0.5294259025,2,0.5779792547,0.0208288847,0.0485533522,1.2563108829,"vs paired FedProx seed 42: worst improved, gap reduced, average degraded; deltas avg=-0.0321, worst=+0.0475, gap=-0.1620"
+123,fedprox,0.5159573795,0.5084946579,0,0.5245445249,0.0066003942,0.016049867,1.4836474738,reference run
+123,wca_comfedseg_prox,0.4959991898,0.4017282859,0,0.5483754992,0.0667968017,0.1466472134,1.3867821703,"vs paired FedProx seed 123: worst degraded, gap increased, average degraded; deltas avg=-0.0200, worst=-0.1068, gap=+0.1306"
+2025,fedprox,0.5671945489,0.474615637,0,0.6656204418,0.0780869142,0.1910048048,1.1546385728,reference run
+2025,wca_comfedseg_prox,0.5545220189,0.4358827986,0,0.6473295689,0.0882341225,0.2114467703,1.1292873835,"vs paired FedProx seed 2025: worst degraded, gap increased, average degraded; deltas avg=-0.0127, worst=-0.0387, gap=+0.0204"

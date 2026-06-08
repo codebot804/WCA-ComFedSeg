@@ -1,0 +1,11 @@
+# Appendix Table. BUS-UCLM moderate non-IID boundary results
+
+Sources: `results/summaries/phase5q_bus_uclm_moderate_pilot.csv` and `results/summaries/phase5s_bus_uclm_wca_bn_scoped_pilot.csv`. These are single-seed pilot/diagnostic rows and are reported as diagnostic evidence rather than final evidence.
+
+| Method | Evidence status | Average Dice | Average IoU | Worst-client Dice | Client Dice SD | Best-worst gap | Uploaded MB | Communication reduction | Scope note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| FedAvg | single-seed pilot/diagnostic | 0.4561 | 0.3369 | 0.2944 | 0.2279 | 0.4840 | 3.374 | 0.0% | Do not use as final main evidence |
+| FedProx | single-seed pilot/diagnostic | 0.4859 | 0.3575 | 0.3281 | 0.2045 | 0.4466 | 3.374 | 0.0% | Do not use as final main evidence |
+| FedBN | single-seed pilot/diagnostic | 0.5076 | 0.3841 | 0.3683 | 0.1757 | 0.3872 | 3.374 | 0.0% | Do not use as final main evidence |
+| WCA-Comm | single-seed pilot/diagnostic | 0.4640 | 0.3515 | 0.2567 | 0.2529 | 0.5635 | 2.362 | 30.0% | Do not use as final main evidence |
+| WCA+BN | single-seed scoped diagnostic | 0.4593 | 0.3332 | 0.3320 | 0.1411 | 0.3241 | 3.374 | 0.0% | Boundary diagnostic only; no communication saving |

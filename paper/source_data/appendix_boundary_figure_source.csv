@@ -1,0 +1,8 @@
+panel,dataset,method,evidence_status,average_dice,worst_client_dice,best_worst_gap,uploaded_mb
+BUS-UCLM pilot,BUS-UCLM,FedBN,single-seed pilot,0.5075977849,0.3682568351,0.3872045596,3.3738327026
+BUS-UCLM pilot,BUS-UCLM,WCA-Comm,single-seed pilot,0.4640348511,0.2566696684,0.5634693713,2.3616828918
+BUS-UCLM pilot,BUS-UCLM,WCA+BN,single-seed diagnostic,0.459296347,0.3320273717,0.3240648169,3.3738327026
+Hard/Kvasir boundary,BUSI,FedProx,three-seed boundary,0.5548025592,0.4883313838,0.1392170311,3.373832703
+Hard/Kvasir boundary,BUSI,WCA+FedProx,three-seed boundary,0.5332331774,0.4556789957,0.135549112,3.373832703
+Hard/Kvasir boundary,Kvasir-SEG,FedBN,three-seed boundary,0.5235634621,0.3782263095,0.2572543423,3.373832703
+Hard/Kvasir boundary,Kvasir-SEG,WCA+BN,three-seed boundary,0.5496064055,0.4255087541,0.2362286131,3.373832703

@@ -1,0 +1,18 @@
+project:
+  name: WCA-ComFedSeg
+
+experiment:
+  method: fedavg
+  dataset: synthetic
+  split: iid
+  clients: 3
+  rounds: 3
+  local_epochs: 1
+  batch_size: 4
+  image_size: 128
+  seed: 42
+
+notes:
+  - "Supported datasets: synthetic, busi, bus_uclm, kvasir_seg."
+  - "Supported split modes: iid, moderate_noniid, hard_noniid, extreme_noniid."
+  - "Supported main methods: fedavg, fedprox, fedbn, wca_comfedseg_comm."

@@ -1,0 +1,125 @@
+fedavg:
+  method_name: fedavg
+  role: required_baseline
+  status: active
+  run_on_real_dataset_default: true
+  include_in_main_table: true
+  include_in_ablation: false
+  notes: "Data-size-weighted FedAvg baseline."
+
+fedprox:
+  method_name: fedprox
+  role: required_baseline
+  status: active
+  run_on_real_dataset_default: true
+  include_in_main_table: true
+  include_in_ablation: false
+  notes: "FedProx baseline with a proximal local objective."
+
+fedbn:
+  method_name: fedbn
+  role: required_baseline
+  status: active
+  run_on_real_dataset_default: true
+  include_in_main_table: true
+  include_in_ablation: false
+  notes: "FedBN baseline that keeps BatchNorm parameters and running statistics local."
+
+local:
+  method_name: local
+  role: optional_baseline
+  status: active
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  notes: "Client-only reference baseline."
+
+centralized:
+  method_name: centralized
+  role: optional_baseline
+  status: active
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  notes: "Pooled-data reference baseline for controlled comparisons."
+
+wca_comfedseg_comm:
+  method_name: wca_comfedseg_comm
+  role: main_candidate
+  status: active
+  run_on_real_dataset_default: true
+  include_in_main_table: true
+  include_in_ablation: true
+  scoped_splits:
+    - moderate_noniid
+  notes: "Worst-client-aware aggregation with communication-efficient client upload scheduling."
+
+wca_comfedseg:
+  method_name: wca_comfedseg
+  role: aggregation_ablation
+  status: active
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  notes: "Aggregation-only WCA ablation."
+
+wca_comfedseg_prox:
+  method_name: wca_comfedseg_prox
+  role: diagnostic_ablation
+  status: diagnostic
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  scoped_only: true
+  scoped_datasets:
+    - busi
+  scoped_splits:
+    - hard_noniid
+  notes: "WCA aggregation with a FedProx-like local objective; diagnostic only."
+
+wca_comfedseg_bn:
+  method_name: wca_comfedseg_bn
+  role: diagnostic_ablation
+  status: diagnostic
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  scoped_only: true
+  notes: "WCA aggregation with FedBN-style local BatchNorm; diagnostic only."
+
+wca_comfedseg_prox_comm_cons:
+  method_name: wca_comfedseg_prox_comm_cons
+  role: diagnostic_ablation
+  status: diagnostic
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: true
+  scoped_only: true
+  notes: "Conservative communication variant used for diagnostics only."
+
+wca_comfedseg_smooth:
+  method_name: wca_comfedseg_smooth
+  role: historical_ablation
+  status: inactive
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: false
+  notes: "Historical smoothing ablation; excluded from main real-data comparisons."
+
+wca_comfedseg_pbn:
+  method_name: wca_comfedseg_pbn
+  role: historical_ablation
+  status: inactive
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: false
+  notes: "Historical personalized-BN ablation; excluded from main real-data comparisons."
+
+wca_comfedseg_rg:
+  method_name: wca_comfedseg_rg
+  role: historical_ablation
+  status: inactive
+  run_on_real_dataset_default: false
+  include_in_main_table: false
+  include_in_ablation: false
+  notes: "Historical reliability-gated ablation; excluded from main real-data comparisons."

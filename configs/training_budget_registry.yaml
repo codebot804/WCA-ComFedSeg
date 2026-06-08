@@ -1,0 +1,28 @@
+synthetic_smoke_test:
+  rounds: 5
+  local_epochs: 1
+  purpose: "Fast pipeline check only."
+
+real_dataset_smoke_test:
+  rounds: 1
+  local_epochs: 1
+  purpose: "Real-dataset loader and pipeline check."
+
+real_dataset_pilot:
+  rounds: 5
+  local_epochs: 1
+  purpose: "Short runtime and sanity check."
+
+real_dataset_scoped_multiseed:
+  seeds:
+    - 42
+    - 123
+    - 2025
+  rounds: 10
+  local_epochs: 2
+  clients: 3
+  batch_size: 4
+  image_size: 128
+  wca_alpha: 0.5
+  fedprox_mu: 0.01
+  purpose: "Scoped real-data validation budget used for the reported multi-seed summaries."

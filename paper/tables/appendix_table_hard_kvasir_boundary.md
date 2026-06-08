@@ -1,0 +1,10 @@
+# Appendix Table. Hard non-IID and Kvasir boundary results
+
+Source CSV: `results/summaries/phase5k_core_hard_multiseed_aggregate.csv`. These three-seed rows define boundary behavior, not the main positive claim.
+
+| Dataset | Split | Method | Seeds | Average Dice, mean +/- SD | Worst-client Dice, mean +/- SD | Client Dice SD, mean +/- SD | Best-worst gap, mean +/- SD | Uploaded MB | Scope note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| BUSI | hard_noniid | FedProx | 42\|123\|2025 | 0.5548 +/- 0.0344 | 0.4883 +/- 0.0178 | 0.0570 +/- 0.0439 | 0.1392 +/- 0.1071 | 3.374 | hard_noniid appendix/boundary, not main success claim |
+| BUSI | hard_noniid | WCA+FedProx | 42\|123\|2025 | 0.5332 +/- 0.0324 | 0.4557 +/- 0.0661 | 0.0586 +/- 0.0344 | 0.1355 +/- 0.0820 | 3.374 | hard_noniid appendix/boundary, not main success claim |
+| Kvasir-SEG | hard_noniid | FedBN | 42\|123\|2025 | 0.5236 +/- 0.0247 | 0.3782 +/- 0.0226 | 0.1099 +/- 0.0070 | 0.2573 +/- 0.0351 | 3.374 | hard_noniid appendix/boundary, not main success claim |
+| Kvasir-SEG | hard_noniid | WCA+BN | 42\|123\|2025 | 0.5496 +/- 0.0145 | 0.4255 +/- 0.0504 | 0.1026 +/- 0.0284 | 0.2362 +/- 0.0580 | 3.374 | hard_noniid appendix/boundary, not main success claim |

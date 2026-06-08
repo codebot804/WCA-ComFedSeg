@@ -1,0 +1,5 @@
+Method,"Worst-client Dice, mean +/- SD","Client Dice SD, mean +/- SD","Best-worst gap, mean +/- SD",Uploaded MB,Communication reduction,Interpretation guardrail
+FedAvg,0.4631 +/- 0.0255,0.0364 +/- 0.0225,0.0822 +/- 0.0528,3.374,0.0%,Main BUSI comparator
+FedProx,0.4633 +/- 0.0205,0.0373 +/- 0.0166,0.0892 +/- 0.0396,3.374,0.0%,Main BUSI comparator
+FedBN,0.4450 +/- 0.0384,0.0486 +/- 0.0105,0.1118 +/- 0.0255,3.374,0.0%,Main BUSI comparator
+WCA-Comm,0.4974 +/- 0.0260,0.0257 +/- 0.0055,0.0580 +/- 0.0109,2.362,30.0%,Main BUSI multi-seed evidence
