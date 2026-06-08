@@ -1,0 +1,23 @@
+# Core scientific stack
+numpy
+pandas
+scikit-learn
+scikit-image
+opencv-python
+Pillow
+
+# Deep learning
+torch
+torchvision
+
+# Experiment configuration and progress
+PyYAML
+tqdm
+
+# Metrics and visualization
+matplotlib
+seaborn
+
+# Testing and code quality
+pytest
+
